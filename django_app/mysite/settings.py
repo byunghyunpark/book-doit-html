@@ -16,9 +16,14 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT_DIR = os.path.dirname(BASE_DIR)
 CONF_DIR = os.path.join(ROOT_DIR, '.django-conf')
-STATIC_ROOT = os.path.join(ROOT_DIR, 'static_root')
+STATIC_DIR = os.path.join(ROOT_DIR, 'static')
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
+# Static files
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    STATIC_DIR,
+]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -114,12 +119,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.10/howto/static-files/
-
-STATIC_URL = '/static/'
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
