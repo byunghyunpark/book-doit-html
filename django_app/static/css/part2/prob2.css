@@ -84,3 +84,12 @@ footer{
 	color:white;
 	text-align:center;
 }
+
+mark {
+    background-color: lime;  /* 배경색을 라임색으로 */
+    font-weight:bold;
+}
+
+.accent{
+    background-color: rgba(255,0,0,0.2);  /* 배경색을 불투명도 0.2인 빨강색으로 */
+}

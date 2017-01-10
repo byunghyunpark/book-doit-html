@@ -13,3 +13,11 @@ def part2_layout1(request):
 
 def prob1(request):
     return render(request, 'part2/prob1.html', {})
+
+
+def health(request):
+    return render(request, 'part3/health.html', {})
+
+
+def mission(request):
+    return render(request, 'part3/mission.html', {})
