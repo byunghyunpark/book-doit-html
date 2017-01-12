@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> 주문서 작성하기</title>
+	<link href="order.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>상품 주문서</h1>
+	<fieldset>
+		<legend>개인 정보</legend>
+		<ul>
+			<li>
+				<label class="tit" for="uid">이름</label>
+				<input type="text" id="uid" placeholder="여백 없이 입력" required="">
+			</li>
+			<li>
+				<label class="tit" for="tell">연락처</label>
+				<input type="tel" id="tell" placeholder="연락 가능한 번호" required=""></label>
+			</li>
+			<li>
+				<label class="tit" for="os">사용폰</label>
+				<input type="text" list="mobileOS" id="os">
+				<datalist id="mobileOS">
+					<option value="ios" label="아이폰"></option>
+					<option value="window" label="윈도우폰"></option>
+					<option value="android" label="안드로이드폰"></option>
+				</datalist>
+			</li>
+			<li>
+				<label for="major" class="tit">대학전공</label>
+				<select name="" id="major">
+					<optgroup label="문과">
+						<option value="biz">경영학과</option>
+						<option value="eng">영문학과</option>
+					</optgroup>
+					<optgroup label="공과">
+						<option value="material">신소재공학</option>
+						<option value="elec">전기공학</option>
+					</optgroup>
+				</select>
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>배송지 정보</legend>
+		<ul>
+			<li>
+				<label class="tit" id="addr">주소</label>
+				<input type="text" id="addr" size="40" max="60" required="">
+			</li>
+			<li>
+				<label class="tit" for="tell2">전화번호</label>
+				<input type="tel" id="tell2" required="">
+			</li>
+			<li>
+				<label class="tit" for="comment">메모</label>
+				<textarea id="comment" cols="40" rows="3"></textarea>
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>주문 정보</legend>
+		<ul>
+			<li>
+				<label><input type="checkbox">과테말라 안티구아(100g)</label>
+				<label><input type="number" value="0" min="0" max="5"> 개</label>
+			</li>
+			<li>
+				<label><input type="checkbox">인도네시아 만델링(100g)</label>
+				<label><input type="number" value="0" min="0" max="5"> 개</label>
+			</li>
+			<li>
+				<label><input type="checkbox">탐나는도다(블렌딩)(100g)</label>
+				<label><input type="number" value="0" min="0" max="5"> 개</label>
+			</li>
+		</ul>
+	</fieldset>
+	<div class="centered">
+		<label><input type="submit" value="주문하기"></label>
+		<label><input type="reset" value="다시 작성"></label>
+	</div>
+</body>
+</html>

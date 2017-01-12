@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>register</title>
+  <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+  <div id="container">
+    <h1>가입정보</h1>
+    <form action="register.php" id="reg_form">
+      <ul>
+        <li>
+          <label for="uname">이름</label>
+          <input type="text" value="" id="uname" placeholder="홍길동" required="" autofocus="">
+        </li>
+        <li>
+          <label for="">이메일</label>
+          <input type="email" value="" id="uemail" placeholder="abcd@abcd.com">
+        </li>
+        <li>
+          <label for="upass">비밀번호</label>
+          <input type="password" value="" id="upass">
+        </li>
+        <li>
+          <label for="sex">성별</label>
+          <select id="sex">
+            <option value="M">남자</option>
+            <option value="W">여자</option>
+          </select>
+      </ul>
+      <div class="centered">
+        <input type="submit" value="가입하기">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

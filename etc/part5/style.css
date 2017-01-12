@@ -1,0 +1,24 @@
+form fieldset {
+  margin-bottom: 10px;
+}
+
+form legend{
+  font-size: 15px;
+  color: #006666;
+  font-weight: 600;
+}
+
+form ul li{
+  list-style:none;
+  font-size:12px;
+  margin : 10px 0;
+}
+
+li label {
+  width: 120px;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  color: blue;
+  line-height: 25px;
+}
