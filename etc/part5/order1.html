@@ -18,6 +18,28 @@
 				<label class="tit" for="tell">연락처</label>
 				<input type="tel" id="tell" placeholder="연락 가능한 번호" required=""></label>
 			</li>
+			<li>
+				<label class="tit" for="os">사용폰</label>
+				<input type="text" list="mobileOS" id="os">
+				<datalist id="mobileOS">
+					<option value="ios" label="아이폰"></option>
+					<option value="window" label="윈도우폰"></option>
+					<option value="android" label="안드로이드폰"></option>
+				</datalist>
+			</li>
+			<li>
+				<label for="major" class="tit">대학전공</label>
+				<select name="" id="major">
+					<optgroup label="문과">
+						<option value="biz">경영학과</option>
+						<option value="eng">영문학과</option>
+					</optgroup>
+					<optgroup label="공과">
+						<option value="material">신소재공학</option>
+						<option value="elec">전기공학</option>
+					</optgroup>
+				</select>
+			</li>
 		</ul>
 	</fieldset>
 	<fieldset>

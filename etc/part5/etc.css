@@ -1,0 +1,22 @@
+button{
+  display: block;
+  background-color: #cccccc;
+  border: 1px solid #dedede;
+  cursor: pointer;
+  padding: 5px 10px 6px 7px;
+  line-height: 20px;
+  font-size: 80%;
+}
+
+button img{
+  border: 0;
+  padding: 0 4px 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+button.subm:hover{
+  background-color: #e6efc2;
+  border: 1px solid #c6d880;
+  color: #529215;
+}
